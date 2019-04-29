@@ -418,7 +418,7 @@ for_window [class="Vivaldi-stable"] focus
 
 
 #terminal
-exec --no-startup-id gnome-terminal
+#exec --no-startup-id gnome-terminal
 
 
 #Mail clients
@@ -467,7 +467,7 @@ exec --no-startup-id volumeicon
 exec --no-startup-id clipit
 
 # google-chrome
-exec --no-startup-id google-chrome
+#exec --no-startup-id google-chrome
 
 #Conky
 exec --no-startup-id conky -c ~/.config/i3/system-overview
