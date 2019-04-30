@@ -469,6 +469,9 @@ exec --no-startup-id clipit
 # google-chrome
 #exec --no-startup-id google-chrome
 
+# Set wallpaper
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+
 #Conky
 exec --no-startup-id conky -c ~/.config/i3/system-overview
 exec --no-startup-id conky -c ~/.config/i3/system-shortcuts
@@ -773,7 +776,7 @@ popup_during_fullscreen smart
 # want it
 
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 10
 gaps inner 5
 gaps outer 5
 #smart_gaps on
@@ -849,12 +852,13 @@ exec_always --no-startup-id compton --config ~/.config/i3/compton.conf
 
 bar {
 
+    mode hide
     height 25
     workspace_buttons yes
     font pango:Noto Sans 14
 
-    #position top
-    position bottom
+    position top
+    #position bottom
 
     #system icons
     #tray_output none
@@ -915,7 +919,7 @@ colors {
 # class                 border  backgr. text    indicator
 client.placeholder      #242424 #242424 #242424
 client.background       #242424 #242424 #242424
-client.focused          #000000 #FFFFFF #e5e5e5 #4A4A4A
+client.focused          #FF0000 #000000 #e5e5e5 #4A4A4A
 client.unfocused        #222222 #222222 #aaaaaa #222222
 client.focused_inactive #222222 #222222 #a9a9a9 #222222
 client.urgent           #d42121 #d42121 #f7f7f7 #d42121
